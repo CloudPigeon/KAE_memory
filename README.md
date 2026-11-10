@@ -1,6 +1,6 @@
 # KAE_memory
 
-Memory research for the KAE agent, featuring **PRISM** — Persona-Routed Interpersonal State & Memory.
+This repository contains **PRISM**, a multi-view memory and active evidence-gathering agent for long-term dialogues.
 
 PRISM compiles conversation history into evidence-linked memory, retrieves through aligned views, and answers questions through bounded research over the original turns.
 

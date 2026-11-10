@@ -97,8 +97,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f52e94a948a47f2d08f5c317577159b3833573e9a50a5519dde396d060f462a4",
-      "bytes": 6832
+      "sha256": "a10e2c8cc4f6d0c0c19e70a08e089729b76dd08d76747d1f5da181841520bb64",
+      "bytes": 6845
     },
     {
       "path": "src/prism/__init__.py",
