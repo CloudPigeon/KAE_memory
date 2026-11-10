@@ -1,0 +1,10 @@
+Tools (up to three actions per turn):
+- {"tool":"search","query":"targeted query","mode":"hybrid" or "keyword",
+   "channel":"both" or "memory" or "raw"}. Hybrid = vector plus BM25, no reranker.
+  Repeating exactly the same query retrieves the next page rather than the same hits.
+- {"tool":"read","source_ids":["known source ID"],"radius":2} reads neighboring
+  turns in the same session. Use this to restore dialogue dependencies.
+- {"tool":"thread","memory_id":"known memory ID"} expands the matched memory
+  group/storyline, with its original sources.
+- {"tool":"session","session_id":"known session ID"} reads that whole session.
+

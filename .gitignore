@@ -1,0 +1,32 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials*
+secrets*
+
+# Datasets and model-call receipts
+data/
+outputs/
+runs/
+cache/
+.locks/
+*.log
+
+# Local Python environments and packaging outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

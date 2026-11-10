@@ -1,0 +1,31 @@
+{
+  "method": "PRISM",
+  "profile": "no_clues",
+  "source_commit": "de03a6a7f66f7e101b2c1409652b4b30bc29d60b",
+  "actors": "data/actors",
+  "questions": "data/questions.json",
+  "store": "outputs/memory",
+  "run": "outputs/predictions-gpt4omini",
+  "models": {
+    "writer": "Qwen2.5-14B-Instruct",
+    "planner": "gpt-4o-mini",
+    "reader": "gpt-4o-mini",
+    "probe": "Qwen3-4B",
+    "judge": "Qwen3-4B",
+    "embedding": "bge-m3"
+  },
+  "writer": {
+    "fact_tokens": 10000,
+    "organize_tokens": 6000,
+    "memory_budget": 3000,
+    "source_budget": 8000
+  },
+  "research": {
+    "max_steps": 3,
+    "temporal_steps": 2,
+    "search_top_k": 5,
+    "context_chars": 18000,
+    "model_context": 32768,
+    "verify_threshold": 0.0
+  }
+}

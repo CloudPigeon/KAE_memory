@@ -1,0 +1,407 @@
+{
+  "repository_name": "KAE_memory",
+  "method": "PRISM",
+  "version": "0.1.0",
+  "prepared_date": "2026-11-10",
+  "source_commit": "de03a6a7f66f7e101b2c1409652b4b30bc29d60b",
+  "project_license": "MIT",
+  "copyright_holder": "CloudPigeon",
+  "distribution": "Algorithm-oriented default no_clues implementation.",
+  "configuration_provenance": "Role models and method budgets adapted from the finalized no_clues experiment configuration associated with the pinned method source.",
+  "changes": [
+    "Presented compilation and research-to-reading directly in pipeline.py.",
+    "Extracted the default six-view ranking, source-pinned context and reader path from the research scripts.",
+    "Moved role prompts into plain-text resources with their original contents.",
+    "Removed run locks, runtime hash gates, disk checkpoints, resumption, transport caches, automatic retries and per-request receipts.",
+    "Removed inactive experimental branches and unused runtime modules.",
+    "Retained fact provenance, visible-source filtering, retrieval budgets and failed-row scoring semantics.",
+    "Replaced private deployment details with explicit environment configuration."
+  ],
+  "execution": "Fresh sequential passes with direct model requests. Question-level failures produce a failed scoring row.",
+  "verification_scope": "Synthetic data and mock model responses. Live model quality is evaluated separately.",
+  "source_files_sha256": {
+    "diag_clean_final_tmc.py": "bd8a274e709bc309c06b1d38c61dd5e5f3772e6be290a249b1b44f52e607c6d9",
+    "docs/memory-write-two-stage-20261030/FACT_EXTRACT.en.txt": "95fb9c00e653dbb0d64c7f9103a15f6028632e5aed7e973bf8ce535154636fd6",
+    "docs/memory-write-two-stage-20261030/MEMORY_ORGANIZE.en.txt": "4a90654e10ad618d82c1e45237910ec5650bbab900e1f180cec7daf7adcc88c6",
+    "experiment.py": "2d99703770a05ee14601977200e2975b39a06dcb7535a71ca79a3705ee55a2ad",
+    "prompts/ANSWER.en.v7.txt": "25d7cf14be10adae86248e2621a6f29816f96a8117686ddbfb9c23e23b6aa917",
+    "scripts/count_canon.py": "344b028d9b8a266353e5431c4e80b39ebe640e5d247a23fc9b019b80b0eca3af",
+    "scripts/duration_unit.py": "018f3cbbeced24f2c475dcecb2061d28a2daa99b082af8f82c1cde4ee5cc8f81",
+    "scripts/lan_judge.py": "3eae2f1897d6e659991b5eb771f4e52e98c4c2c8ed04c22790e99d921147b602",
+    "scripts/run_lan_scheme_a.py": "49c72d51cca97e65c0cdbfcf05ae4ae0dcc9b47fb07d01ddade26241132916af",
+    "scripts/verdict_canon.py": "0f12b2611c1946d02f4c6f21509db1ae828906e13e0e5d0ad4bdc27282c8e06d",
+    "smc_turn_preproc_build.py": "e621b99d265b24d4437d3ff7667f5001caa8f14faeed67bcdc42f2b4f6b70854",
+    "src/prism/__init__.py": "f0de6396aaa95ecd00b5ae76dd43305f4b6cc5a362482f7782e17835e65af4df",
+    "src/prism/__main__.py": "482b8693e2fe6dbd732e3d7961e03827d3efa187bad11d29da188be580ebbeea",
+    "src/prism/client.py": "eb6338779b1fe7e60525fe0526e0e8730ba13618329c138bc8593976dbca397c",
+    "src/prism/data.py": "129069ca760f1d6af72fa4a32a003253b2c3ab82947a96fc813e524be08b8a03",
+    "src/prism/decision.py": "12e8b982afba90261b588c6baf8fabdd34cecd23dcc135e3a0984b0c4db83bf5",
+    "src/prism/hotpot_official.py": "76857b823f212457aeeb200ba49d0f8b79a961559648ad1ee492256208e34b6f",
+    "src/prism/ingest.py": "8bad921d643642f7b3c97b3ed92bd37d3d5bded3c9ace7d73b36ec3dda1c98fd",
+    "src/prism/io.py": "5af3382df743a03134020546d1b0837868879f705efd850d966ffbd41362f4a1",
+    "src/prism/memory.py": "1f53fe6679ea4fb54c6bdac92e8b0851643b437423d41e699adcf31f600d2f3f",
+    "src/prism/probe_loop.py": "50a14f5a5f8094c9be1dcb59957c9965aaf67491f7bdf8786383ad512f20b3d8",
+    "src/prism/probe_plan_loop.py": "d2e6179d346886aa2d703046866a850ef5efaf711a4cc79ee1a95b43db4b07a7",
+    "src/prism/prompts.py": "9d27350f2cae1977c3d8fd255036d2b18e028ec78ae47a21991f2a4ae24bc52d",
+    "src/prism/replan.py": "98665f173a5ae605c81a2178d953e96b246f7609d681cc9854787d88ad398c06",
+    "src/prism/retrieve.py": "ecae144cf650a7ea4f2443cd5d382b6b5b4e2b639cfb8b5ad0ec06fa21663a1d",
+    "src/prism/time.py": "678acd1b613554a0f2ed221480eaa7de417e61bdac8edc7ebfe4097a061e10e7",
+    "src/prism/two_stage.py": "203cd99af7fecb62b08c9fe4ae3de1d9a53ffeffde8001c03b7d0675f78380c9"
+  },
+  "manifest_scope": "All distributed files except this manifest.",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "78435c76820e4118c3090ebf7369a4991e831652f43c400527eb42d841e43351",
+      "bytes": 510
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "31238d2b6f137894ca5d2de4f1d73f438a377779dd3ed39e3291c818d5d43e40",
+      "bytes": 56
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7b74ef7e5dd0975467bbafc8e0cf93db63a800b64c8e3601bd8c0641fc2f39ce",
+      "bytes": 340
+    },
+    {
+      "path": "configs/gpt4omini.json",
+      "sha256": "f8e555bac6055a3dcb9680c9c49805b5d57ce7e0c52b3f0d60f4108bad7cc92b",
+      "bytes": 740
+    },
+    {
+      "path": "configs/qwen14b.json",
+      "sha256": "3239b3255c25f0be22ef39e39fb32f6d75a2291ee713c198976613dc69f54974",
+      "bytes": 748
+    },
+    {
+      "path": "examples/locomo_synthetic.json",
+      "sha256": "0b217f64e1541b6b6490513a54a1ec10601a16243652df27650a8e0d01fc3291",
+      "bytes": 817
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "22e53dbf4b5c7e4b416fb4e5f7a50a9acacfc5164093dacec8beae7602836d55",
+      "bytes": 1068
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "df681e6fa9fd23ff2ab987154ae34cca2d84288c693e918589e29def526211e8",
+      "bytes": 284
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a32a994b4a50eb1a7393d17d599eaee6e8b61ac6ad3f60cc82b51333c91714cc",
+      "bytes": 931
+    },
+    {
+      "path": "README.md",
+      "sha256": "f52e94a948a47f2d08f5c317577159b3833573e9a50a5519dde396d060f462a4",
+      "bytes": 6832
+    },
+    {
+      "path": "src/prism/__init__.py",
+      "sha256": "00f02ad59461981ea14ecd5c8d18751e6a366bdd88d919b84645015fba9379c9",
+      "bytes": 43,
+      "sources": [
+        "src/prism/__init__.py"
+      ]
+    },
+    {
+      "path": "src/prism/__main__.py",
+      "sha256": "83e38f8364733c93549ae2ff56ed1956651a9392f002f391fb93de3d20440dd3",
+      "bytes": 52,
+      "sources": [
+        "src/prism/__main__.py"
+      ]
+    },
+    {
+      "path": "src/prism/client.py",
+      "sha256": "3f09358dd40984a7725b2d7ee28705dbb6146d2a0375340f947a953abfd17782",
+      "bytes": 1909,
+      "sources": [
+        "src/prism/client.py"
+      ]
+    },
+    {
+      "path": "src/prism/compilation.py",
+      "sha256": "427667887464d81a1fdb8c48d282a4e65432c41b90552f93ea8fa00f535e99b8",
+      "bytes": 8085,
+      "sources": [
+        "diag_clean_final_tmc.py",
+        "experiment.py",
+        "smc_turn_preproc_build.py"
+      ]
+    },
+    {
+      "path": "src/prism/data.py",
+      "sha256": "4e5ef3d9ee58f8c1542bb7d98b3c2df937435db1c928ffbc92bb6276ab1d8803",
+      "bytes": 1284,
+      "sources": [
+        "src/prism/data.py"
+      ]
+    },
+    {
+      "path": "src/prism/decision.py",
+      "sha256": "5392c71702c2d73c41493a08e2fa12b99ef1a05d79da478d4a128aeabdcd8bad",
+      "bytes": 4358,
+      "sources": [
+        "src/prism/decision.py",
+        "scripts/lan_judge.py"
+      ]
+    },
+    {
+      "path": "src/prism/hotpot_official.py",
+      "sha256": "6e3cbf20002ed64b92288cebd3815b88a141eaa3ffb4e93ae339276abdcc8704",
+      "bytes": 1455,
+      "sources": [
+        "src/prism/hotpot_official.py"
+      ]
+    },
+    {
+      "path": "src/prism/ingest.py",
+      "sha256": "b8c164a4f6fe7cb1bb5dbee0f1151aaa1fe26bcb1cab5a4fdeb4c1282accdc8b",
+      "bytes": 1209,
+      "sources": [
+        "src/prism/ingest.py"
+      ]
+    },
+    {
+      "path": "src/prism/io.py",
+      "sha256": "2348deec1296cee3d591a1e333a2c704e42d148590ade85a612ba084a257c0c3",
+      "bytes": 763,
+      "sources": [
+        "src/prism/io.py"
+      ]
+    },
+    {
+      "path": "src/prism/memory.py",
+      "sha256": "6759b3cf375c104394b8f1d86c195d8598d58a52ea9d40705e705974d69f7fd4",
+      "bytes": 8663,
+      "sources": [
+        "src/prism/memory.py"
+      ]
+    },
+    {
+      "path": "src/prism/metrics.py",
+      "sha256": "cb9582bf05600fb7b25487568b71979c66f687798a9dead961efd68792864a3d",
+      "bytes": 3282
+    },
+    {
+      "path": "src/prism/normalization.py",
+      "sha256": "32211e183b403586f974236d63dfdf71cc9b459dd790d495e664bfacbd4f17e0",
+      "bytes": 11460,
+      "sources": [
+        "scripts/run_lan_scheme_a.py",
+        "scripts/count_canon.py",
+        "scripts/verdict_canon.py",
+        "scripts/duration_unit.py"
+      ]
+    },
+    {
+      "path": "src/prism/pipeline.py",
+      "sha256": "2ce5b94e462f8d2f91d8991b2332b0b492e00b38f0a8e149f181685fab919891",
+      "bytes": 7531,
+      "sources": [
+        "smc_turn_preproc_build.py",
+        "scripts/run_lan_scheme_a.py"
+      ]
+    },
+    {
+      "path": "src/prism/probe_loop.py",
+      "sha256": "2db3ca5bab6b9a69a7be1e62d3800eac2335569461000569747e78c658082c04",
+      "bytes": 8136,
+      "sources": [
+        "src/prism/probe_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/probe_plan_loop.py",
+      "sha256": "1429ecff9976eb12416dc6c6eeeac3412e9454e8984c9f833ecf34ee164dd3de",
+      "bytes": 7106,
+      "sources": [
+        "src/prism/probe_plan_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/prompts.py",
+      "sha256": "4662fd36c8dc80993110d674fa9aa2acb728e1f3b5e975a26b132a35de981233",
+      "bytes": 517,
+      "sources": [
+        "src/prism/prompts.py"
+      ]
+    },
+    {
+      "path": "src/prism/reader.py",
+      "sha256": "9e50e392ebdc72b832c32d0b4bc13329a835ca8226dcfbe97b75c5ad20000771",
+      "bytes": 3817,
+      "sources": [
+        "scripts/run_lan_scheme_a.py"
+      ]
+    },
+    {
+      "path": "src/prism/release.py",
+      "sha256": "fdf012b0f72ed9b971479883a6ee4a892dba3a90e17df15ad104326eb452ad22",
+      "bytes": 3129
+    },
+    {
+      "path": "src/prism/replan.py",
+      "sha256": "0d9aecffced31b29a58eb1b08f64ecd3eb8c4e094b1394bfb11dc6ffcb05e4d9",
+      "bytes": 860,
+      "sources": [
+        "src/prism/replan.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/ANSWER.en.v7.txt",
+      "sha256": "25d7cf14be10adae86248e2621a6f29816f96a8117686ddbfb9c23e23b6aa917",
+      "bytes": 4123,
+      "sources": [
+        "prompts/ANSWER.en.v7.txt"
+      ]
+    },
+    {
+      "path": "src/prism/resources/CONTROL.en.txt",
+      "sha256": "384c732f06503fd175b5d448dfa6d9768c1830f31f9633d26d534a690b24022b",
+      "bytes": 4920,
+      "sources": [
+        "src/prism/probe_plan_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/default_config.json",
+      "sha256": "3239b3255c25f0be22ef39e39fb32f6d75a2291ee713c198976613dc69f54974",
+      "bytes": 748
+    },
+    {
+      "path": "src/prism/resources/DURATION.en.txt",
+      "sha256": "d9e67518cadaffe529fc96e59765ee8e83ed079c36935ad12a03a3e6413b6b73",
+      "bytes": 266,
+      "sources": [
+        "scripts/duration_unit.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/FACT_EXTRACT.en.txt",
+      "sha256": "95fb9c00e653dbb0d64c7f9103a15f6028632e5aed7e973bf8ce535154636fd6",
+      "bytes": 1812,
+      "sources": [
+        "docs/memory-write-two-stage-20261030/FACT_EXTRACT.en.txt"
+      ]
+    },
+    {
+      "path": "src/prism/resources/INFER.en.txt",
+      "sha256": "8d26a85fb2f201dc81e559b15a363e0d6f30a6d425774e890d9d948fe60298d6",
+      "bytes": 1680,
+      "sources": [
+        "scripts/run_lan_scheme_a.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/JUDGE.en.txt",
+      "sha256": "e69806e87ae136feeb12475e0b2ca03f7132b72750bd3baacca6e3c8ada1118b",
+      "bytes": 1932,
+      "sources": [
+        "scripts/lan_judge.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/MEMORY_ORGANIZE.en.txt",
+      "sha256": "4a90654e10ad618d82c1e45237910ec5650bbab900e1f180cec7daf7adcc88c6",
+      "bytes": 5416,
+      "sources": [
+        "docs/memory-write-two-stage-20261030/MEMORY_ORGANIZE.en.txt"
+      ]
+    },
+    {
+      "path": "src/prism/resources/PLAN.en.txt",
+      "sha256": "a7220723b8972b6cef4ab2bc337f9257076bb72a6d114894f63c4f84deae836a",
+      "bytes": 4474,
+      "sources": [
+        "src/prism/probe_plan_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/PROBE.en.txt",
+      "sha256": "aa6a1d5ec47c23f1e8ff24a3b038b8ee94e6d6f4736a141471abfe9025c40834",
+      "bytes": 1774,
+      "sources": [
+        "src/prism/probe_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/READY.en.txt",
+      "sha256": "e904095f8439130c82812dddbccea98c77e214630585bcfdc79e9a1f0a583fe5",
+      "bytes": 1940,
+      "sources": [
+        "scripts/lan_judge.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/REPLAN.en.txt",
+      "sha256": "6165ae4b3b57212a22a4bf1dcc4c7e5fd933c36e9d1cf39a2bff5998fec5e710",
+      "bytes": 3293,
+      "sources": [
+        "src/prism/replan.py"
+      ]
+    },
+    {
+      "path": "src/prism/resources/TOOLS.en.txt",
+      "sha256": "f7d2cdc9890fe19c061f1f7d4fba32ad50e7043f999e02122dd557ce1b700cf2",
+      "bytes": 636,
+      "sources": [
+        "src/prism/probe_plan_loop.py"
+      ]
+    },
+    {
+      "path": "src/prism/retrieve.py",
+      "sha256": "aff1d234e08749dc6b51ece2b4f844e033167933bdea646fabfb2dd92795910a",
+      "bytes": 3703,
+      "sources": [
+        "src/prism/retrieve.py"
+      ]
+    },
+    {
+      "path": "src/prism/settings.py",
+      "sha256": "903ea032bf1545539a42564225ec7b42d182d4f29eceda900712822cba9f9322",
+      "bytes": 440
+    },
+    {
+      "path": "src/prism/time.py",
+      "sha256": "74840b1fc7e925aad6c6daacf5f894f5e2181c78a2e2a6c2ceec0c16c0321549",
+      "bytes": 9155,
+      "sources": [
+        "src/prism/time.py"
+      ]
+    },
+    {
+      "path": "src/prism/two_stage.py",
+      "sha256": "5e24837c6d672141e9e76b4852a9b593e416c9c050b8b43fe5668cababd3fbca",
+      "bytes": 16844,
+      "sources": [
+        "src/prism/two_stage.py"
+      ]
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "95308611cbcf79e6db856438802debbfd387830aa15171484ea7a0aec47b3f5c",
+      "bytes": 9181
+    },
+    {
+      "path": "third_party/E-mem/LICENSE",
+      "sha256": "16920600de2d6e0936f1f399659efa7e2ac9d02ca48452d49ed53874c84cf979",
+      "bytes": 11337
+    },
+    {
+      "path": "third_party/E-mem/NOTICE",
+      "sha256": "57ebeb0a37d2e9d4204afc82502695047f48b5f2fe55f03b315e368f30b6c204",
+      "bytes": 1508
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "a3e466113f51c9963c134d22705ff2f7128989d6da264ca8efb2f7c164d211de",
+      "bytes": 1207
+    }
+  ]
+}

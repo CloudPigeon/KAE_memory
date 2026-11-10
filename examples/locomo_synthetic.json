@@ -1,0 +1,23 @@
+[
+  {
+    "sample_id": "example-memory",
+    "conversation": {
+      "speaker_a": "Alex",
+      "speaker_b": "Morgan",
+      "session_1_date_time": "10:00 am on 1 May, 2026",
+      "session_1": [
+        {"dia_id": "D1:1", "speaker": "Morgan", "text": "Where did you move?"},
+        {"dia_id": "D1:2", "speaker": "Alex", "text": "I moved to Leeds last month."}
+      ],
+      "session_2_date_time": "10:00 am on 2 May, 2026",
+      "session_2": [
+        {"dia_id": "D2:1", "speaker": "Morgan", "text": "How do you travel to work?"},
+        {"dia_id": "D2:2", "speaker": "Alex", "text": "I cycle to work."}
+      ]
+    },
+    "qa": [
+      {"question": "Where did Alex move?", "answer": "Leeds", "category": 4},
+      {"question": "How does Alex travel to work?", "answer": "By bicycle", "category": 4}
+    ]
+  }
+]

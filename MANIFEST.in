@@ -1,0 +1,7 @@
+include LICENSE README.md THIRD_PARTY_NOTICES.md .env.example
+include RELEASE_MANIFEST.json
+recursive-include configs *.json
+recursive-include examples *.json
+recursive-include tests *.py
+recursive-include third_party LICENSE NOTICE
+recursive-include src/prism/resources *.txt *.json

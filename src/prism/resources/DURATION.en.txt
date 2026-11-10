@@ -1,0 +1,5 @@
+The QUESTION asks how long something lasted or has lasted. State the duration as
+a short phrase that names its unit, for example "four months" or "about ten years". Keep
+the quantity the findings support; only make the unit explicit.
+
+Return JSON {"answer": string}.
