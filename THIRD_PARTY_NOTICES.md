@@ -2,7 +2,7 @@
 
 ## HotpotQA lexical scorer
 
-`src/prism/hotpot_official.py` preserves the scoring functions already present in the pinned PRISM source. Those functions were vendored from `GAM/research/eval/hotpotqa_test.py` and `E-mem/evaluation/hotpotqa/eval_hotpotqa.py`, whose function bodies matched in the local source audit.
+`src/prism/hotpot_official.py` preserves the scoring functions already present in the pinned method source. Those functions were vendored from `GAM/research/eval/hotpotqa_test.py` and `E-mem/evaluation/hotpotqa/eval_hotpotqa.py`, whose function bodies matched in the local source audit.
 
 The E-mem distribution uses Apache License 2.0. Its license and notice are reproduced in `third_party/E-mem/`. The upstream notice identifies the adapted GAM code and reproduces GAM's MIT permission notice for Copyright (c) 2025 VectorSpaceLab.
 

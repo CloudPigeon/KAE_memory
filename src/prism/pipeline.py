@@ -1,4 +1,4 @@
-"""PRISM's offline compiler and online research-to-reading algorithm."""
+"""RefractMem's offline compiler and online research-to-reading algorithm."""
 import json
 import re
 from collections import Counter

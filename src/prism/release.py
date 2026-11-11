@@ -36,7 +36,7 @@ def prepare(source, selected=None):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="KAE_memory / PRISM algorithm implementation")
+    parser = argparse.ArgumentParser(description="KAE_memory / RefractMem algorithm implementation")
     sub = parser.add_subparsers(dest="command", required=True)
     command = sub.add_parser("prepare")
     command.add_argument("--source", required=True, type=Path)

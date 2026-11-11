@@ -1,6 +1,6 @@
 {
   "repository_name": "KAE_memory",
-  "method": "PRISM",
+  "method": "RefractMem",
   "version": "0.1.0",
   "prepared_date": "2026-11-10",
   "source_commit": "de03a6a7f66f7e101b2c1409652b4b30bc29d60b",
@@ -67,13 +67,13 @@
     },
     {
       "path": "configs/gpt4omini.json",
-      "sha256": "f8e555bac6055a3dcb9680c9c49805b5d57ce7e0c52b3f0d60f4108bad7cc92b",
-      "bytes": 740
+      "sha256": "d3d9ce6ce837a8a696158e5e20f67459f4ec3fe19e86d1c3e9e8d46faff3f893",
+      "bytes": 745
     },
     {
       "path": "configs/qwen14b.json",
-      "sha256": "3239b3255c25f0be22ef39e39fb32f6d75a2291ee713c198976613dc69f54974",
-      "bytes": 748
+      "sha256": "2f25d431408daf2715ecd4c93e9a4c00517664910a16213ef4aec71d1c01953b",
+      "bytes": 753
     },
     {
       "path": "examples/locomo_synthetic.json",
@@ -92,18 +92,18 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "a32a994b4a50eb1a7393d17d599eaee6e8b61ac6ad3f60cc82b51333c91714cc",
-      "bytes": 931
+      "sha256": "99ed10f52841e95deb624e28fbdfba1ae42d4ec9879192f5fe86d9cf1bca309f",
+      "bytes": 974
     },
     {
       "path": "README.md",
-      "sha256": "a10e2c8cc4f6d0c0c19e70a08e089729b76dd08d76747d1f5da181841520bb64",
-      "bytes": 6845
+      "sha256": "46f0be893282c6a2badbbf79c8636608e54e57370e4072a149cfe407ca0c6846",
+      "bytes": 6886
     },
     {
       "path": "src/prism/__init__.py",
-      "sha256": "00f02ad59461981ea14ecd5c8d18751e6a366bdd88d919b84645015fba9379c9",
-      "bytes": 43,
+      "sha256": "7df37cf8e78dfe4972555a47ef268d97f3dc79f82279b2711eaa3f054c47bda7",
+      "bytes": 56,
       "sources": [
         "src/prism/__init__.py"
       ]
@@ -161,8 +161,8 @@
     },
     {
       "path": "src/prism/ingest.py",
-      "sha256": "b8c164a4f6fe7cb1bb5dbee0f1151aaa1fe26bcb1cab5a4fdeb4c1282accdc8b",
-      "bytes": 1209,
+      "sha256": "bf1630643624953ffc1e0d1e3ac1d879cc04812639a70b42ff15634524da6014",
+      "bytes": 1214,
       "sources": [
         "src/prism/ingest.py"
       ]
@@ -201,8 +201,8 @@
     },
     {
       "path": "src/prism/pipeline.py",
-      "sha256": "2ce5b94e462f8d2f91d8991b2332b0b492e00b38f0a8e149f181685fab919891",
-      "bytes": 7531,
+      "sha256": "180ace13e3a065d38964e295d2f34d5a7c610d9d839e42107705c61061714281",
+      "bytes": 7536,
       "sources": [
         "smc_turn_preproc_build.py",
         "scripts/run_lan_scheme_a.py"
@@ -242,8 +242,8 @@
     },
     {
       "path": "src/prism/release.py",
-      "sha256": "fdf012b0f72ed9b971479883a6ee4a892dba3a90e17df15ad104326eb452ad22",
-      "bytes": 3129
+      "sha256": "bfbaec467445e010d301d014dd4b6df03404941e27ed835b71e57a5f53338ff5",
+      "bytes": 3134
     },
     {
       "path": "src/prism/replan.py",
@@ -271,8 +271,8 @@
     },
     {
       "path": "src/prism/resources/default_config.json",
-      "sha256": "3239b3255c25f0be22ef39e39fb32f6d75a2291ee713c198976613dc69f54974",
-      "bytes": 748
+      "sha256": "2f25d431408daf2715ecd4c93e9a4c00517664910a16213ef4aec71d1c01953b",
+      "bytes": 753
     },
     {
       "path": "src/prism/resources/DURATION.en.txt",
@@ -400,8 +400,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "a3e466113f51c9963c134d22705ff2f7128989d6da264ca8efb2f7c164d211de",
-      "bytes": 1207
+      "sha256": "709fe5e00354a3063afaeb22a62fd32822ad66a20cec5f1934ac9f57dcdfad45",
+      "bytes": 1208
     }
   ]
 }

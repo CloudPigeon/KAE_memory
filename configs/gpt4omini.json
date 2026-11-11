@@ -1,5 +1,5 @@
 {
-  "method": "PRISM",
+  "method": "RefractMem",
   "profile": "no_clues",
   "source_commit": "de03a6a7f66f7e101b2c1409652b4b30bc29d60b",
   "actors": "data/actors",

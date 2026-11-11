@@ -1,4 +1,4 @@
-"""Project dataset records onto the conversation fields used by PRISM."""
+"""Project dataset records onto the conversation fields used by RefractMem."""
 import re
 
 from .data import sanitize_conversation

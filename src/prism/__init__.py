@@ -1,1 +1,1 @@
-'PRISM memory research for the KAE agent.'
+'RefractMem memory compilation and evidence gathering.'

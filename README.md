@@ -1,8 +1,8 @@
 # KAE_memory
 
-This repository contains **PRISM**, a multi-view memory and active evidence-gathering agent for long-term dialogues.
+This repository contains **RefractMem**, a framework for multi-view memory compilation and requirement-driven evidence gathering in long-term dialogues.
 
-PRISM compiles conversation history into evidence-linked memory, retrieves through aligned views, and answers questions through bounded research over the original turns.
+RefractMem compiles conversation history into evidence-linked memory, retrieves through aligned views, and answers questions through bounded research over the original turns.
 
 ## Reading the algorithm
 
