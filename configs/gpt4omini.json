@@ -7,7 +7,7 @@
   "store": "outputs/memory",
   "run": "outputs/predictions-gpt4omini",
   "models": {
-    "writer": "Qwen2.5-14B-Instruct",
+    "writer": "gpt-4o-mini",
     "planner": "gpt-4o-mini",
     "reader": "gpt-4o-mini",
     "probe": "Qwen3-4B",

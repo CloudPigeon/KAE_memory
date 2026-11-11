@@ -67,8 +67,8 @@
     },
     {
       "path": "configs/gpt4omini.json",
-      "sha256": "d3d9ce6ce837a8a696158e5e20f67459f4ec3fe19e86d1c3e9e8d46faff3f893",
-      "bytes": 745
+      "sha256": "12f017d02e36cf5f9cbfdb08128d6eecdc0eb004c167bc0709c26f4b47489d29",
+      "bytes": 736
     },
     {
       "path": "configs/qwen14b.json",
@@ -97,8 +97,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "46f0be893282c6a2badbbf79c8636608e54e57370e4072a149cfe407ca0c6846",
-      "bytes": 6886
+      "sha256": "621573095f820610966c023c0ca8075257617fdf47e109a0ac46de41facde803",
+      "bytes": 7001
     },
     {
       "path": "src/prism/__init__.py",

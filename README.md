@@ -75,7 +75,7 @@ kae-memory score --predictions outputs/predictions/rows.json --labels data/evalu
 
 The example contains two synthetic questions. `build` and `run` call the configured models. Each invocation performs a fresh sequential pass over its selected inputs. Use `run --limit N` to select a question prefix. Failed questions produce a failed row and remain in the scoring denominator.
 
-`configs/qwen14b.json` uses Qwen2.5-14B-Instruct for writing, planning and reading, Qwen3-4B for auxiliary roles, and bge-m3 for embeddings. `configs/gpt4omini.json` selects GPT-4o-mini for planning and reading, with the same offline writer. Role models and method budgets are explicit in the configuration.
+Both configurations use one primary model for atomic fact extraction, memory organization, online planning and reading. `configs/qwen14b.json` selects Qwen2.5-14B-Instruct, and `configs/gpt4omini.json` selects GPT-4o-mini for all primary-model roles (`writer`, `planner`, and `reader`). Both use Qwen3-4B for the auxiliary roles (`probe` and `judge`), bge-m3 for embeddings, and identical compilation and research budgets.
 
 The workspace defaults to the current directory. Set `PRISM_WORKSPACE` in the process environment to choose another location. Environment loading uses that workspace's `.env`, or an explicit `PRISM_ENV_FILE`. Local data, stores, predictions and credentials are covered by `.gitignore`.
 
